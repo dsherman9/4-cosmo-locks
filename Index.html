@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4 & Cosmo Locks</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:#0b0b0f;color:#fff;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    header{position:sticky;top:0;background:rgba(11,11,15,.95);border-bottom:1px solid #24242c;z-index:10}
+    nav{max-width:1100px;margin:auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:900;font-size:1.25rem;letter-spacing:.5px}
+    .brand span{color:#f2c94c}
+    nav ul{list-style:none;display:flex;gap:20px;font-size:.95rem}
+    .hero{max-width:1100px;margin:auto;padding:90px 24px 70px;text-align:center}
+    .eyebrow{color:#f2c94c;font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.82rem}
+    h1{font-size:clamp(2.7rem,7vw,5.8rem);line-height:.95;margin:16px 0}
+    .hero p{max-width:720px;margin:0 auto 28px;color:#c9c9d1;font-size:1.1rem}
+    .btn{display:inline-block;padding:14px 22px;border-radius:10px;font-weight:800;margin:6px;cursor:pointer}
+    .primary{background:#f2c94c;color:#111}
+    .secondary{border:1px solid #3a3a45;color:#fff}
+    section{max-width:1100px;margin:auto;padding:60px 24px}
+    h2{font-size:2rem;margin-bottom:10px}
+    .sub{color:#aaaab5;margin-bottom:28px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .card{background:#15151b;border:1px solid #2a2a33;border-radius:16px;padding:24px}
+    .price{font-size:2rem;font-weight:900;color:#f2c94c;margin:10px 0}
+    .card ul{padding-left:18px;color:#cfcfd6}
+    .pick{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid #292933}
+    .badge{background:#24242d;padding:6px 10px;border-radius:999px;font-size:.8rem}
+    .record{font-size:2.4rem;font-weight:900}
+    .muted{color:#aaaab5}
+    .notice{background:#121219;border-left:4px solid #f2c94c;padding:18px;border-radius:8px;color:#c9c9d1}
+    footer{border-top:1px solid #24242c;text-align:center;padding:32px 24px;color:#888894}
+    @media(max-width:700px){nav ul{display:none}.hero{padding-top:65px}}
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="brand">4 & Cosmo <span>Locks</span></div>
+    <ul>
+      <li><a href="#picks">Picks</a></li>
+      <li><a href="#vip">VIP</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="eyebrow">Daily Sports Picks</div>
+    <h1>4 & Cosmo Locks</h1>
+    <p>Premium sports picks, matchup research, line analysis, and betting insight. Join VIP for full access to daily selections.</p>
+    <a class="btn primary" href="#vip">Join VIP</a>
+    <a class="btn secondary" href="#picks">View Picks</a>
+  </section>
+
+  <section id="picks">
+    <h2>Today's Picks</h2>
+    <p class="sub">Post free picks here or show previews of premium selections.</p>
+    <div class="card">
+      <div class="pick">
+        <div>
+          <strong>🔥 Best Bet</strong>
+          <div class="muted">Premium pick available to VIP members</div>
+        </div>
+        <span class="badge">VIP</span>
+      </div>
+      <div class="pick">
+        <div>
+          <strong>⚾ MLB Pick</strong>
+          <div class="muted">Matchup analysis + recommended line</div>
+        </div>
+        <span class="badge">VIP</span>
+      </div>
+      <div class="pick" style="border-bottom:none">
+        <div>
+          <strong>🏈 Football Pick</strong>
+          <div class="muted">Spread, total, or moneyline analysis</div>
+        </div>
+        <span class="badge">VIP</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="vip">
+    <h2>VIP Memberships</h2>
+    <p class="sub">You can connect these buttons to Stripe or another approved payment processor later.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Weekly VIP</h3>
+        <div class="price">$200</div>
+        <ul><li>7 days of access</li><li>All sports picks</li><li>Pick breakdowns</li></ul>
+        <a class="btn primary" href="#">Join Weekly</a>
+      </div>
+      <div class="card">
+        <h3>Monthly VIP</h3>
+        <div class="price">$400</div>
+        <ul><li>30 days of access</li><li>All premium picks</li><li>Priority updates</li></ul>
+        <a class="btn primary" href="#">Join Monthly</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="results">
+    <h2>Results</h2>
+    <p class="sub">Track your real record here and keep both wins and losses visible.</p>
+    <div class="grid">
+      <div class="card"><div class="record">4–2</div><div class="muted">Yesterday</div></div>
+      <div class="card"><div class="record">18–11</div><div class="muted">Last 7 Days</div></div>
+      <div class="card"><div class="record">—</div><div class="muted">Season Record</div></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About 4 & Cosmo Locks</h2>
+    <p class="sub">Straightforward picks and sports analysis without guaranteed-win claims.</p>
+    <div class="notice">
+      <strong>Disclaimer:</strong> 4 & Cosmo Locks provides sports analysis and picks for informational and entertainment purposes only. No pick, result, or profit is guaranteed. Customers are responsible for following applicable laws, sportsbook rules, and age requirements in their location.
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 4 & Cosmo Locks. All rights reserved.
+</footer>
+</body>
+</html>
